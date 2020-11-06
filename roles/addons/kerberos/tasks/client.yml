@@ -5,13 +5,13 @@
 
 - name: Importing install tasks
   import_tasks: client/client_install.yml
-  tags: ['kerberos-client', 'kerberos-client-install']
+  tags: ['kerberos-client-install']
 
 - name: Importing configuration tasks
   import_tasks: client/client_configure.yml
-  tags: ['kerberos-client', 'kerberos-client-configure']
+  tags: ['kerberos-client-configure']
 
 - name: Optionally including facts tasks
   include_tasks: client/client_facts.yml
   when: kerberos_client_facts|bool
-  tags: ['kerberos-client', 'kerberos-client-facts']
+  tags: ['kerberos-client-facts']

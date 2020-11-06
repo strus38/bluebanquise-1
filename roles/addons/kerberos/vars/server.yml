@@ -1,6 +1,4 @@
 ---
-kerberos_server_role_version: 1.0.0
-
 kerberos_server_packages_to_install:
   - krb5-kdc
   - krb5-admin-server

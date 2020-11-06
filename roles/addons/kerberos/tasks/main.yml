@@ -1,8 +1,10 @@
 ---
 - name: kerberos █ Importing client tasks
   import_tasks: client.yml
-  tags: ['kerberos-client', 'kerberos-client-configure']
-
+  when:
+    - kerberos_profile == 'client'
+  
 - name: kerberos █ Importing server tasks
   import_tasks: server.yml
-  tags: ['kerberos-server']
+  when:
+    - kerberos_profile == 'server'
