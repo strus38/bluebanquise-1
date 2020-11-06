@@ -88,7 +88,7 @@
 
 - name: kerberos █ Setup krb5.conf
   template:
-    src: krb5.conf.j2
+    src: client/krb5.conf.j2
     dest: '{{ kerberos_client_config_file }}'
     owner: root
     group: root
