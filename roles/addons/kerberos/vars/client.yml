@@ -5,9 +5,6 @@ kerberos_client_packages_to_install:
 kerberos_client_defaults_distribution:
   default_ccache_name: 'KEYRING:persistent:%{uid}'
 
----
-# defaults file for kerberos-client
-
 # Enable facts deploiement
 kerberos_client_facts: true
 
@@ -59,8 +56,6 @@ kerberos_client_keytab_principal: 'host/{{ ansible_fqdn }}@EXAMPLE.COM'
 
 kerberos_client_realms: {}
 kerberos_client_defaults: {}
-# Default values pre-configured per distributions
-kerberos_client_defaults_distribution: {}
 # List of domain mapping
 kerberos_client_domains: {}
 # List of logging rules
