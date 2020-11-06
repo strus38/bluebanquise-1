@@ -1,0 +1,8 @@
+---
+- name: kerberos █ Importing client tasks
+  import_tasks: client.yml
+  tags: ['kerberos-client', 'kerberos-client-configure']
+
+- name: kerberos █ Importing server tasks
+  import_tasks: server.yml
+  tags: ['kerberos-server']
