@@ -52,7 +52,7 @@
   tags:
     - configuration
 
-- name: restart krb5-kdc
+- name: restart krb5kdc
   service:
-    name: krb5-kdc
+    name: krb5kdc
     state: restarted
