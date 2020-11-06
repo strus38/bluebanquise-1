@@ -11,13 +11,6 @@ kerberos_client_defaults_distribution:
 # Enable facts deploiement
 kerberos_client_facts: true
 
-
-### INSTALL CONFIGURATION
-# ---------------------------------------
-# List of packages to install
-kerberos_client_packages_names: []
-
-
 ### KERBEROS SERVICE CONFIGURATION
 # ---------------------------------------
 
@@ -61,7 +54,7 @@ kerberos_client_keytab_deploy_tmp_file: '/tmp/{{ inventory_hostname }}.keytab'
 # ---------------------------------------
 
 # Host principal used to produce and check host keytab
-# kerberos_client_keytab_principal: 'host/{{ ansible_fqdn }}@EXAMPLE.COM'
+kerberos_client_keytab_principal: 'host/{{ ansible_fqdn }}@EXAMPLE.COM'
 
 
 kerberos_client_realms: {}
@@ -72,13 +65,10 @@ kerberos_client_defaults_distribution: {}
 kerberos_client_domains: {}
 # List of logging rules
 kerberos_client_logging: {}
-
 # dbmodule per realm
 kerberos_client_dbmodules: {}
-
 # kerberos plugins
 kerberos_client_plugins: {}
-
 
 # Merged dict of defaults configurations items
 kerberos_client_defaults_merged: '{{

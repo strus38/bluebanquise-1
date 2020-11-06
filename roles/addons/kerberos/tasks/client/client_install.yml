@@ -1,5 +1,8 @@
 ---
 - name: kerberos █ Install Kerberos Client packages
   package:
-    name: '{{ kerberos_client_packages_names|list }}'
+    name: "{{ item }}"
     state: present
+  with_items: "{{ kerberos_client_packages_to_install }}"
+  tags:
+    - package
