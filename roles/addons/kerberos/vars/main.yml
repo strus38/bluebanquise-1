@@ -1,4 +1,4 @@
 ---
 kerberos_role_version: 1.0.0
 
-kerberos_profile: 'server'
+kerberos_profile: server

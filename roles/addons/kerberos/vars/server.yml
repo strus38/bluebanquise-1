@@ -1,16 +1,16 @@
 ---
 kerberos_server_packages_to_install:
-  - krb5-kdc
-  - krb5-admin-server
+  - krb5-server
+  - krb5-libs
   # Optional packages if you need to install those add-ons
-  - krb5-kdc-ldap
-  - ldap-utils
-  - krb5-pkinit
-  - krb5-otp
-  - krb5-k5tls
-  - libsasl2-modules-gssapi-mit
-  - libauthen-sasl-perl
-  - libauthen-sasl-cyrus-perl
+  # - krb5-kdc-ldap
+  # - ldap-utils
+  # - krb5-pkinit
+  # - krb5-otp
+  # - krb5-k5tls
+  # - libsasl2-modules-gssapi-mit
+  # - libauthen-sasl-perl
+  # - libauthen-sasl-cyrus-perl
 
 #	Default values for KDC behavior
 kerberos_server_kdcdefaults:
