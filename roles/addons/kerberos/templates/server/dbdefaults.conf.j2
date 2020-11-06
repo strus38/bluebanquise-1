@@ -1,5 +1,5 @@
 {% if kerberos_server_dbdefaults is defined %}
-{% for dbdefaults in kerberos_dbdefaults %}
+{% for dbdefaults in kerberos_server_dbdefaults %}
 {% if loop.first %}
 {% if dbdefaults.ldap_kerberos_container_dn is defined %}
     ldap_kerberos_container_dn          = {{ dbdefaults.ldap_kerberos_container_dn }}
